@@ -7,14 +7,6 @@
 </h1>
 <h4 align="center">Extensive collection of essential composition functions for Vue</h4>
 
-## Install
-
-```sh
-yarn add vuetools
-# or
-npm install vuetools
-```
-
 ## :rocket: Features
 
 - :deciduous_tree: **Bundler-friendly** with tree shaking support. Only imports the functions
@@ -23,4 +15,16 @@ npm install vuetools
   documentation.
 - :zero: **Zero-config** server-side rendering capability.
 - :airplane: **Self-contained** with no dependencies.
-- :electric_plug: **Additional addons** such as timeago...
+- :electric_plug: **Additional addons** such as vue-router, timeago, etc.
+
+## :earth_americas: Ecosystem
+
+- @vuetools/core
+- @vuetools/router
+
+## :fire: Functions
+
+### `@vuetools/core`
+
+- Browser
+  - `useEventListener` — add event listeners to dom with ease.
