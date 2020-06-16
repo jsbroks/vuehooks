@@ -9,15 +9,18 @@
 
 ## Install
 
-```bash
+```sh
 yarn add vuetools
-or
+# or
 npm install vuetools
 ```
 
 ## :rocket: Features
 
-- 🌳 **Bundler-friendly** with tree shaking support
-- 📚 **Well-documented** and type-safe interfaces
-- ⚛️ **Zero-config** server-side rendering capability
-- 📦 **Self-contained**, free of runtime dependencies
+- :deciduous_tree: **Bundler-friendly** with tree shaking support. Only imports the functions
+  you need.
+- :books: **Well-documented** and type-safe interfaces. Uses typescript with detailed
+  documentation.
+- :zero: **Zero-config** server-side rendering capability.
+- :airplane: **Self-contained** with no dependencies.
+- :electric_plug: **Additional addons** such as timeago...
