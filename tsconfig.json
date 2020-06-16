@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "composite": true,
-    "target": "es6",
+    "target": "es5",
     "module": "esnext",
     "rootDir": "packages",
     "outDir": "./dist",
-    "declarationDir": "./typings",
     "declaration": true,
     "declarationMap": true,
     "moduleResolution": "node",
@@ -28,10 +27,10 @@
     "forceConsistentCasingInFileNames": true,
 
     "lib": ["esnext", "esnext.asynciterable", "dom", "dom.iterable"],
-    "baseUrl": ".",
     "types": ["@types/node", "@types/jest"],
+    "baseUrl": ".",
     "paths": {
-      "*": ["types/*"]
+      "*": ["typings/*"]
     }
   },
   "include": ["packages"],
