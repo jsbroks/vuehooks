@@ -1,6 +1,6 @@
 {
   "name": "@vuetools/router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Useful composition functions for vue-router",
   "keywords": [
     "vue",

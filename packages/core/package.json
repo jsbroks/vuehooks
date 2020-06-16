@@ -1,6 +1,6 @@
 {
   "name": "@vuetools/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of composition functions",
   "keywords": [
     "vue",
