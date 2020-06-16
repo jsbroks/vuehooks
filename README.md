@@ -31,13 +31,15 @@
 
 ### [`@vuehooks/core`](https://www.npmjs.com/package/@vuehooks/core)
 
+- **Animations**
+  - `useTimeout` — change variables state after a timeout.
+  - `useTimeoutFn` — call a function after a timeout.
 - **Browser**
   - `useEventListener` — add event listeners to dom with ease.
 - **Sensors**
   - `useLongPress` — track long press gestures.
-- **Animations**
-  - `useTimeout` — change variables state after a timeout.
-  - `useTimeoutFn` — call a function after a timeout.
+- **State**
+  - `useToggle` — track state of a boolean.
 
 ### [`@vuehooks/router`](https://www.npmjs.com/package/@vuehooks/router)
 
