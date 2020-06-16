@@ -1,0 +1,36 @@
+{
+  "name": "vuetools",
+  "version": "0.0.0",
+  "description": "Collection of composition functions",
+  "keywords": [
+    "vue",
+    "composition-api",
+    "functions",
+    "utilities",
+    "utils",
+    "helpers"
+  ],
+  "author": "DataTorch <support@datatorch.io>",
+  "homepage": "https://github.com/datatorch/vuetools#readme",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datatorch/vuetools.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/datatorch/vuetools/issues"
+  }
+}

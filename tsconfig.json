@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es6",
+    "module": "esnext",
+    "rootDir": "packages",
+    "outDir": "./dist",
+    "declarationDir": "./typings",
+    "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "traceResolution": true,
+    "removeComments": false,
+    "forceConsistentCasingInFileNames": true,
+
+    "lib": ["esnext", "esnext.asynciterable", "dom", "dom.iterable"],
+    "baseUrl": ".",
+    "types": ["@types/node", "@types/jest"],
+    "paths": {
+      "*": ["types/*"]
+    }
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "vuetools-mono",
+  "description": "Collection of essential composition functions for Vue",
+  "private": true,
+  "repository": "https://github.com/datatorch/vuetools",
+  "author": "DataTorch <support@datatorch.io>",
+  "license": "MIT",
+  "scripts": {
+    "test": "lerna run test --npm-client=yarn",
+    "bootstrap": "lerna bootstrap --npm-client=yarn",
+    "clean": "rimraf packages/**/dist packages/**/*.tsbuildinfo",
+    "update": "yarn upgrade-interactive --latest",
+    "release": "yarn clean && yarn build && lerna publish"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@vue/composition-api": "^0.6.4",
+    "@vue/runtime-dom": "^3.0.0-beta.15",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@vue/composition-api": "^0.6.4",
+    "@vue/runtime-dom": "^3.0.0-beta.15",
+    "@vue/test-utils": "^1.0.3",
+    "jest": "^26.0.1",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "vue-tsx-support": "^2.3.3"
+  }
+}
