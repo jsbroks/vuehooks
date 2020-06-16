@@ -1,3 +1,4 @@
+import 'vue-router/types/vue'
 import { getCurrentInstance } from '@vue/composition-api'
 
 export function getVue(): Vue {

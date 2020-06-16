@@ -1,0 +1,32 @@
+{
+  "name": "@vuetools/router",
+  "version": "0.0.1",
+  "description": "Useful composition functions for vue-router",
+  "keywords": [
+    "vue",
+    "vue-router",
+    "composition-api"
+  ],
+  "author": "DataTorch <support@datatorch.io>",
+  "homepage": "https://github.com/datatorch/vuetools#readme",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datatorch/vuetools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datatorch/vuetools/issues"
+  },
+  "peerDependencies": {
+    "vue-router": "^3.3.4"
+  }
+}
