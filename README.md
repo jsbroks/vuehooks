@@ -3,7 +3,7 @@
 </p> -->
 
 <h1 align="center">
-  VueTools
+  vuehooks
 </h1>
 <h4 align="center">Extensive collection of essential composition functions for Vue</h4>
 
@@ -21,21 +21,21 @@
 
 ## :earth_americas: Ecosystem
 
-- [@vuetools/core](#vuetoolscore)
-- [@vuetools/router](#vuetoolsrouter)
+- [@vuehooks/core](#vuehookscore)
+- [@vuehooks/router](#vuehooksrouter)
 
 <br />
 
 ## :fire: Functions
 
-### `@vuetools/core`
+### `@vuehooks/core`
 
-  - **Browser**
-    - `useEventListener` — add event listeners to dom with ease.
+- **Browser**
+  - `useEventListener` — add event listeners to dom with ease.
 
-### `@vuetools/router`
+### `@vuehooks/router`
 
-  - **Vue Router**
-    - `useRouter` — gain easy access to the vue-router
-    - `useQuery` — monitor url queries with on line
-    - `useParam` — monitor url parameters with on line
+- **Vue Router**
+  - `useRouter` — gain easy access to the vue-router
+  - `useQuery` — monitor url queries with on line
+  - `useParam` — monitor url parameters with on line

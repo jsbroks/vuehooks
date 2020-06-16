@@ -1,5 +1,5 @@
 {
-  "name": "@vuetools/core",
+  "name": "@vuehooks/core",
   "version": "0.0.2",
   "description": "Collection of composition functions",
   "keywords": [
@@ -12,7 +12,7 @@
     "helpers"
   ],
   "author": "DataTorch <support@datatorch.io>",
-  "homepage": "https://github.com/datatorch/vuetools#readme",
+  "homepage": "https://github.com/datatorch/vuehooks#readme",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "jest"
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datatorch/vuetools.git"
+    "url": "git+https://github.com/datatorch/vuehooks.git"
   },
   "bugs": {
-    "url": "https://github.com/datatorch/vuetools/issues"
+    "url": "https://github.com/datatorch/vuehooks/issues"
   },
   "gitHead": "954dc22f352a9adb0d14eaeae1c97e1b1836277d"
 }

@@ -1,8 +1,8 @@
 {
-  "name": "@vuetools/mono",
+  "name": "@vuehooks/mono",
   "description": "Collection of essential composition functions for Vue",
   "private": true,
-  "repository": "https://github.com/datatorch/vuetools",
+  "repository": "https://github.com/datatorch/vuehooks",
   "author": "DataTorch <support@datatorch.io>",
   "license": "MIT",
   "scripts": {
