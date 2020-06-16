@@ -9,22 +9,27 @@
 
 ## :rocket: Features
 
-- :deciduous_tree: **Bundler-friendly** with tree shaking support. Only imports the functions
-  you need.
-- :books: **Well-documented** and type-safe interfaces. Uses typescript with detailed
-  documentation.
-- :zero: **Zero-config** server-side rendering capability.
-- :airplane: **Self-contained** with no dependencies.
-- :electric_plug: **Additional addons** such as vue-router, timeago, etc.
+- **Bundler-friendly** only imports the functions you need.
+- **Well-documented** and typed interfaces.
+- **Zero-config** server-side rendering capability.
+- **Self-contained** with no dependencies.
+- **Additional addons** such as vue-router, timeago, etc.
 
 ## :earth_americas: Ecosystem
 
-- @vuetools/core
-- @vuetools/router
+- [@vuetools/core]()
+- [@vuetools/router]()
 
 ## :fire: Functions
 
 ### `@vuetools/core`
 
-#### - Browser
-  - `useEventListener` — add event listeners to dom with ease.
+  - **Browser**
+    - `useEventListener` — add event listeners to dom with ease.
+
+### `@vuetools/router`
+
+  - **Vue Router**
+    - `useRouter` — gain easy access to the vue-router
+    - `useQuery` — monitor url queries with on line
+    - `useParam` — monitor url parameters with on line
