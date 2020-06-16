@@ -7,6 +7,8 @@
 </h1>
 <h4 align="center">Extensive collection of essential composition functions for Vue</h4>
 
+<br />
+
 ## :rocket: Features
 
 - **Bundler-friendly** only imports the functions you need.
@@ -15,10 +17,14 @@
 - **Self-contained** with no dependencies.
 - **Additional addons** such as vue-router, timeago, etc.
 
+<br />
+
 ## :earth_americas: Ecosystem
 
 - [@vuetools/core](#vuetoolscore)
-- [@vuetools/router](#vuetoolrouter)
+- [@vuetools/router](#vuetoolsrouter)
+
+<br />
 
 ## :fire: Functions
 
