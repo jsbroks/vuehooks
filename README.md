@@ -26,5 +26,5 @@
 
 ### `@vuetools/core`
 
-- Browser
+#### - Browser
   - `useEventListener` — add event listeners to dom with ease.
