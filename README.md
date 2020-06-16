@@ -22,18 +22,24 @@
 ## :earth_americas: Ecosystem
 
 - [@vuehooks/core](#vuehookscore)
+
 - [@vuehooks/router](#vuehooksrouter)
 
 <br />
 
 ## :fire: Functions
 
-### `@vuehooks/core`
+### [`@vuehooks/core`](https://www.npmjs.com/package/@vuehooks/core)
 
 - **Browser**
   - `useEventListener` — add event listeners to dom with ease.
+- **Sensors**
+  - `useLongPress` — track long press gestures.
+- **Animations**
+  - `useTimeout` — change variables state after a timeout.
+  - `useTimeoutFn` — call a function after a timeout.
 
-### `@vuehooks/router`
+### [`@vuehooks/router`](https://www.npmjs.com/package/@vuehooks/router)
 
 - **Vue Router**
   - `useRouter` — gain easy access to the vue-router
