@@ -1,6 +1,6 @@
 {
   "name": "@vuehooks/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Collection of composition functions",
   "keywords": [
     "vue",
