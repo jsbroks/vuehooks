@@ -1,5 +1,5 @@
 {
-  "name": "vuetools",
+  "name": "@vuetools/core",
   "version": "0.0.1",
   "description": "Collection of composition functions",
   "keywords": [
@@ -33,5 +33,6 @@
   },
   "bugs": {
     "url": "https://github.com/datatorch/vuetools/issues"
-  }
+  },
+  "gitHead": "a25aea360cf334b21241fbb06772fe3a9ec6bebb"
 }

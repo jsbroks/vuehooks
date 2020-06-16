@@ -1,5 +1,5 @@
 {
-  "name": "vuetools-mono",
+  "name": "@vuetools/mono",
   "description": "Collection of essential composition functions for Vue",
   "private": true,
   "repository": "https://github.com/datatorch/vuetools",
