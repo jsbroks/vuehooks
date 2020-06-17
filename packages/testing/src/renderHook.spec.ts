@@ -1,4 +1,4 @@
-import { renderHook } from '../src'
+import { renderHook } from './index'
 
 import { ref } from '@vue/composition-api'
 
@@ -9,17 +9,16 @@ export function useCounter() {
 }
 
 describe('renderHook', () => {
-  it('renders a hook', () => {
+  it('renders the hook', () => {
     renderHook(() => {
       const { count } = useCounter()
       expect(count.value).toEqual(0)
     })
   })
 
-  it('includes returned values', async () => {
+  it('has hook values on component', async () => {
     const wrapper = renderHook(() => useCounter())
 
-    await wrapper.vm.$nextTick()
     expect(wrapper.vm.count).toEqual(0)
     expect(wrapper.vm.inc).toBeDefined()
   })

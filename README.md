@@ -37,6 +37,7 @@
   - `useTimeoutFn` — call a function after a timeout.
 - **Browser**
   - `useEventListener` — add event listeners to dom with ease.
+  - `useEventListenerElement` — add event listeners to element with ease.
   - `useMediaQuery` — track the results of a media query programmatically.
 - **Sensors**
   - `useLongPress` — track long press gestures.
@@ -50,14 +51,23 @@
   - `createGlobalState` — create state accessible in any component.
   - `useClamp` — track state of a clamped number.
   - `useCounter` — track state of a number.
+  - `useHover` — track if an element is being hovered over.
   - `useToggle` — track state of a boolean.
 - **Emitter**
   - `createEmitter` — create an emitter for an event bus.
   - `useEventOn` — add event listeners to emitters.
+- **Miscellaneous**
+  - `useWorker` — running heavy javascript file without blocking ui.
+  - `useWorkerFn` — running heavy task, without blocking ui.
 
 ### [`@vuehooks/router`](https://www.npmjs.com/package/@vuehooks/router)
 
 - **Vue Router**
-  - `useRouter` — gain easy access to the vue-router
-  - `useQuery` — monitor url queries with one line
-  - `useParam` — monitor url parameters with one line
+  - `useRouter` — gain easy access to the vue-router.
+  - `useQuery` — monitor url queries with one line.
+  - `useParam` — monitor url parameters with one line.
+
+### [`@vuehooks/testing`](https://www.npmjs.com/package/@vuehooks/testing)
+
+- **Testing**
+  - `renderHook` — render hooks in a component for easy testing.
