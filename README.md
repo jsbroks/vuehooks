@@ -11,7 +11,7 @@
 
 ## :rocket: Features
 
-- **10+ composition functions** with more to come!
+- **20+ composition functions** with more to come!
 - **Bundler-friendly** only imports the functions you need.
 - **Well-documented** and typed interfaces.
 - **Zero-config** server-side rendering capability.
@@ -44,13 +44,20 @@
   - `useMouse` — track mouse position.
   - `useMouseElement` — track mouse position in element.
   - `useWindowSize` — track with and height of window.
-  - `useResizeObserver` — track the width and height of an element.
+  - `useResizeObserver` — track the width and height of an element using
+    [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver).
 - **State**
+  - `createGlobalState` — create state accessible in any component.
+  - `useClamp` — track state of a clamped number.
+  - `useCounter` — track state of a number.
   - `useToggle` — track state of a boolean.
+- **Emitter**
+  - `createEmitter` — create an emitter for an event bus.
+  - `useEventOn` — add event listeners to emitters.
 
 ### [`@vuehooks/router`](https://www.npmjs.com/package/@vuehooks/router)
 
 - **Vue Router**
   - `useRouter` — gain easy access to the vue-router
-  - `useQuery` — monitor url queries with on line
-  - `useParam` — monitor url parameters with on line
+  - `useQuery` — monitor url queries with one line
+  - `useParam` — monitor url parameters with one line
