@@ -30,7 +30,8 @@
     "types": ["@types/node", "@types/jest", "@types/resize-observer-browser"],
     "baseUrl": ".",
     "paths": {
-      "*": ["typings/*"]
+      "*": ["typings/*"],
+      "@vuehooks/jest": ["./packages/testing/src/index.ts"]
     }
   },
   "include": ["packages"],

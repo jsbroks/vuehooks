@@ -1,9 +1,10 @@
 import Vue from 'vue'
 
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import { defineComponent } from '@vue/composition-api'
+import api, { defineComponent } from '@vue/composition-api'
 
 const localVue = createLocalVue()
+localVue.use(api)
 
 export function renderHook<V>(setup: () => V) {
   const App = defineComponent({
@@ -11,7 +12,5 @@ export function renderHook<V>(setup: () => V) {
     setup
   })
 
-  return shallowMount<Vue & V>(App as any, {
-    localVue
-  })
+  return shallowMount<Vue & V>(App, { localVue })
 }

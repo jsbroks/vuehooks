@@ -1,0 +1,30 @@
+{
+  "name": "@vuehooks/testing",
+  "version": "0.0.4",
+  "description": "Simple Vue hook testing utilities",
+  "keywords": [
+    "vue",
+    "composition-api",
+    "hooks"
+  ],
+  "author": "DataTorch <support@datatorch.io>",
+  "homepage": "https://github.com/datatorch/vuehooks#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datatorch/vuehooks.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/datatorch/vuehooks/issues"
+  }
+}
