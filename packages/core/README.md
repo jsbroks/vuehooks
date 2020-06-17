@@ -1,7 +1,7 @@
 <h1 align="center">
-  vuehooks
+  @vuehooks/core
 </h1>
-<h4 align="center">Extensive collection of essential composition functions for Vue</h4>
+<h4>Extensive collection of essential composition functions for Vue</h4>
 
 <br />
 
@@ -17,9 +17,8 @@
 
 ## :earth_americas: Ecosystem
 
-- [@vuehooks/core](#vuehookscore)
-
-- [@vuehooks/router](#vuehooksrouter)
+- [@vuehooks/core](https://www.npmjs.com/package/@vuehooks/core)
+- [@vuehooks/router](https://www.npmjs.com/package/@vuehooks/router)
 
 <br />
 
