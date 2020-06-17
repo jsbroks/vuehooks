@@ -27,7 +27,7 @@
     "forceConsistentCasingInFileNames": true,
 
     "lib": ["esnext", "esnext.asynciterable", "dom", "dom.iterable"],
-    "types": ["@types/node", "@types/jest"],
+    "types": ["@types/node", "@types/jest", "@types/resize-observer-browser"],
     "baseUrl": ".",
     "paths": {
       "*": ["typings/*"]
