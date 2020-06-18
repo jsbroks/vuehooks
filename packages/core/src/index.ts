@@ -1,6 +1,8 @@
+export { createEmitter } from './createEmitter'
 export { useClamp } from './useClamp'
 export { useCounter } from './useCounter'
 export { useEvent } from './useEvent'
+export { useToggle } from './useToggle'
 export { useTimeout } from './useTimeout'
 export { useTimeoutFn } from './useTimeoutFn'
 export { useLongPress } from './useLongPress'

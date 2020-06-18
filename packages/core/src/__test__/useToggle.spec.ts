@@ -1,4 +1,4 @@
-import { useToggle } from '../useToggle'
+import { useToggle } from '../'
 
 describe('useToggle', () => {
   it('has correct functions returned', () => {

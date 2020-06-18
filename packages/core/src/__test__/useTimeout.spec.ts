@@ -1,4 +1,4 @@
-import { useTimeout } from '../useTimeout'
+import { useTimeout } from '../'
 
 describe('useTimeout', () => {
   beforeAll(() => jest.useFakeTimers())

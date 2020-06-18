@@ -1,5 +1,7 @@
+import Vue from 'vue'
+import { ref } from '@vue/composition-api'
 import { emitter } from '../utils/emitter'
-import { useEvent } from '../useEvent'
+import { useEvent } from '../'
 import { renderHook } from '../../../testing/src'
 
 describe('useEvent', () => {
@@ -51,25 +53,59 @@ describe('useEvent', () => {
     })
   })
 
-  // describe('window', () => {
-  //   const element: Window = {} as any
+  describe('event target', () => {
+    let et = {} as EventTarget
 
-  //   beforeEach(() => {
-  //     element.addEventListener = jest.fn()
-  //     element.removeEventListener = jest.fn()
-  //   })
+    beforeEach(() => {
+      et = {
+        addEventListener: jest.fn(),
+        removeEventListener: jest.fn(),
+        dispatchEvent: jest.fn()
+      }
+    })
 
-  //   it('adds event listeners', () => {
-  //     const wrapper = renderHook(() => {
-  //       useEvent(window, 'load', listener)
-  //     })
-  //     wrapper.vm.
-  //     wrapper.destroy()
+    it('adds event listeners', async () => {
+      const wrapper = renderHook(() => {
+        useEvent(et, 'event', listener)
+      })
 
-  //     expect(element.addEventListener).toHaveBeenCalled()
-  //     expect(element.removeEventListener).toHaveBeenCalled()
-  //   })
-  // })
+      await Vue.nextTick()
+      wrapper.destroy()
+      await Vue.nextTick()
 
-  //   describe('document', () => {})
+      expect(et.addEventListener).toHaveBeenCalled()
+      expect(et.removeEventListener).toHaveBeenCalled()
+    })
+
+    it('can remove event listeners', async () => {
+      let remove: any
+      renderHook(() => {
+        remove = useEvent(et, 'event', listener)
+      })
+
+      await Vue.nextTick()
+      remove()
+      await Vue.nextTick()
+
+      expect(et.addEventListener).toHaveBeenCalled()
+      expect(et.removeEventListener).toHaveBeenCalled()
+    })
+
+    it('adds listener when no longer null', async () => {
+      const eventRef = ref()
+
+      const remove = useEvent(eventRef, 'event', listener)
+
+      await Vue.nextTick()
+      remove()
+
+      expect(et.addEventListener).not.toHaveBeenCalled()
+      expect(et.removeEventListener).not.toHaveBeenCalled()
+
+      eventRef.value = et
+
+      await Vue.nextTick()
+      expect(et.addEventListener).toHaveBeenCalled()
+    })
+  })
 })

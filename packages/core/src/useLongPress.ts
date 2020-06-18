@@ -1,5 +1,5 @@
-import { useEventListener } from '.'
 import { useTimeoutFn } from './useTimeoutFn'
+import { useWindowEvent } from './useWindowEvent'
 
 interface Options {
   preventDefault?: boolean
@@ -22,11 +22,11 @@ export function useLongPress(
     stop()
   }
 
-  useEventListener('mousedown', startEvent)
-  useEventListener('mouseup', stopEvent)
+  useWindowEvent('mousedown', startEvent)
+  useWindowEvent('mouseup', stopEvent)
 
-  useEventListener('touchstart', startEvent)
-  useEventListener('touchend', stopEvent)
+  useWindowEvent('touchstart', startEvent)
+  useWindowEvent('touchend', stopEvent)
 
   return { start, stop }
 }

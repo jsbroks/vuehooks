@@ -1,5 +1,5 @@
 import { RefElement, MaybeRef } from './utils/typings'
-import { ref, watch, onUnmounted } from '@vue/composition-api'
+import { ref, watch, onUnmounted, Ref } from '@vue/composition-api'
 import {
   Emitter,
   EmitterHandler,
@@ -21,10 +21,17 @@ export function useEvent<K extends keyof DocumentEventMap>(
   options?: boolean | AddEventListenerOptions
 ): () => void
 
+export function useEvent(
+  target: MaybeRef<EventTarget>,
+  type: string,
+  listener: EventListener,
+  options?: boolean | AddEventListenerOptions
+): () => void
+
 export function useEvent<K extends keyof DocumentEventMap>(
-  element: RefElement,
+  element: RefElement | Ref<any>,
   type: K,
-  listener: (this: Document, ev: DocumentEventMap[K]) => any,
+  listener: (this: Element, ev: DocumentEventMap[K]) => any,
   options?: boolean | AddEventListenerOptions,
   target?: Document
 ): () => void
@@ -38,7 +45,7 @@ export function useEvent(
 export function useEvent(
   target: any,
   type: string,
-  listener: (...args: any[]) => any,
+  listener: EmitterHandler | EventListener,
   options?: boolean | AddEventListenerOptions
 ): () => void {
   let remove = noop

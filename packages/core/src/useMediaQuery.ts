@@ -1,5 +1,5 @@
 import { onMounted, onUnmounted } from '@vue/composition-api'
-import useToggle from './useToggle'
+import { useToggle } from './useToggle'
 import { hasWindow } from './utils'
 
 export function useMediaQuery(query: string) {

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { useTimeoutFn } from '../useTimeoutFn'
+import { useTimeoutFn } from '../'
 import { renderHook } from '../../../testing/src'
 
 describe('useTimeoutFn', () => {

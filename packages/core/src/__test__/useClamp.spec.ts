@@ -1,4 +1,4 @@
-import { useClamp } from '../useClamp'
+import { useClamp } from '../'
 
 describe('useClamp', () => {
   it('sets initial value', () => {

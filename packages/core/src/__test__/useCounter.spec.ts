@@ -1,4 +1,4 @@
-import { useCounter } from '../useCounter'
+import { useCounter } from '../'
 
 describe('useCounter', () => {
   it('sets initial value', () => {
