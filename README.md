@@ -26,6 +26,7 @@
 - **Well-documented** and typed interfaces.
 - **Zero-config** server-side rendering capability.
 - **Self-contained** with no dependencies.
+- **Backed by a team** using VueHooks in production.
 - **Additional addons** such as vue-router, timeago, etc.
 
 <br />

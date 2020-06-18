@@ -34,6 +34,6 @@
       "@vuehooks/jest": ["./packages/testing/src/index.ts"]
     }
   },
-  "include": ["packages"],
+  "include": ["packages", "setupTest.ts"],
   "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.stories.ts"]
 }

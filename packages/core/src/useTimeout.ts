@@ -1,6 +1,6 @@
-import { ref, getCurrentInstance } from '@vue/composition-api'
+import { ref } from '@vue/composition-api'
 
-export function useTimeout(ms: number, now: boolean = false) {
+export function useTimeout(ms: number, immediate: boolean = false) {
   let ready = ref(false)
   let timer: any = null
 
@@ -19,14 +19,15 @@ export function useTimeout(ms: number, now: boolean = false) {
   // Called to stop timer
   const stop = () => {
     ready.value = false
-    if (timer) {
-      clearTimeout(timer)
-      timer = null
-    }
+    clearTimeout(timer)
+    timer = null
   }
 
-  if (now) start()
-  if (getCurrentInstance()) stop()
+  if (immediate) start()
 
-  return { start, stop, ready }
+  return {
+    start,
+    stop,
+    ready
+  }
 }
