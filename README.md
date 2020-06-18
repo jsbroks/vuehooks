@@ -7,6 +7,17 @@
 </h1>
 <h4 align="center">Collection of utility composition functions for Vue</h4>
 
+<p align="center">
+<a href="https://www.npmjs.com/package/@vuehooks/core" target="__blank">
+<img src="https://img.shields.io/npm/v/@vuehooks/core?color=2ecc71" alt="NPM version" /></a>
+<a href="https://www.npmjs.com/package/@vuehooks" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/core?color=34495e"/></a>
+<a href="https://github.com/antfu/vueuse" target="__blank"><img src="https://img.shields.io/github/last-commit/datatorch/vuehooks.svg?color=9b59b6" alt="GitHub last commit" /></a>
+<a href="https://github.com/antfu/vueuse/issues" target="__blank"><img src="https://img.shields.io/github/issues/antfu/vueuse.svg?color=c977be" alt="GitHub issues" /></a>
+<a href='https://coveralls.io/github/datatorch/vuehooks?branch=master'><img src='https://coveralls.io/repos/github/datatorch/vuehooks/badge.svg?branch=master' alt='Coverage Status' /></a>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/datatorch/vuehooks/Tests">
+</p>
+
+
 <br />
 
 ## :rocket: Features
