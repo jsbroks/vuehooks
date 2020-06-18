@@ -7,16 +7,19 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - run: yarn --frozen-lockfile
-    - run: yarn bootstrap
-    - run: yarn test
+    - name: Install dependenices
+      run: yarn --frozen-lockfile
+    - name: Run tests
+      run: yarn test
+    - name: Submit coverage
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
