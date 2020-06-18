@@ -17,7 +17,6 @@
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/datatorch/vuehooks/Tests?color=2ecc71">
 </p>
 
-
 <br />
 
 ## :rocket: Features
@@ -33,8 +32,9 @@
 
 ## :earth_americas: Ecosystem
 
-- [@vuehooks/core](#vuehookscore)
+<!-- omit in toc -->
 
+- [@vuehooks/core](#vuehookscore)
 - [@vuehooks/router](#vuehooksrouter)
 
 <br />
