@@ -3,12 +3,12 @@ import { useCounter } from '../useCounter'
 
 describe('useCounter', () => {
   it('sets initial value', () => {
-    const wrapper = renderHook(() => useCounter(5))
-    expect(wrapper.vm.count).toBe(5)
-    expect(wrapper.vm.inc).toBeDefined()
-    expect(wrapper.vm.set).toBeDefined()
-    expect(wrapper.vm.reset).toBeDefined()
-    expect(wrapper.vm.dec).toBeDefined()
+    const { count, inc, set, reset, dec } = useCounter(5)
+    expect(count.value).toBe(5)
+    expect(inc).toBeDefined()
+    expect(set).toBeDefined()
+    expect(reset).toBeDefined()
+    expect(dec).toBeDefined()
   })
 
   it('increments', () => {

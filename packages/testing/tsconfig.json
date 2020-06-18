@@ -4,5 +4,5 @@
     "rootDir": "./src",
     "outDir": "./dist"
   },
-  "include": ["./src", "../router/src/getVue.ts"]
+  "include": ["./src"]
 }

@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch --coverage",
     "build": "lerna run build --npm-client=yarn",
     "bootstrap": "lerna bootstrap --npm-client=yarn",
     "clean": "rimraf packages/**/dist packages/**/*.tsbuildinfo",

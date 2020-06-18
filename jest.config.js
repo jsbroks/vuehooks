@@ -8,5 +8,14 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
     '^.+\\.(ts|tsx)$': 'ts-jest'
-  }
+  },
+  setupFiles: ['<rootDir>/test/setupTest.ts'],
+  rootDir: __dirname,
+  globals: {
+    __DEV__: true
+  },
+  coverageDirectory: 'coverage',
+  coverageReporters: ['html', 'lcov', 'text'],
+  collectCoverageFrom: ['src/**/*.ts', 'packages/*/src/**/*.ts'],
+  watchPathIgnorePatterns: ['/node_modules/']
 }
