@@ -1,7 +1,6 @@
 export { useClamp } from './useClamp'
 export { useCounter } from './useCounter'
-export { useEventListener } from './useEventListener'
-export { useEventListenerElement } from './useEventListenerElement'
+export { useEvent } from './useEvent'
 export { useTimeout } from './useTimeout'
 export { useTimeoutFn } from './useTimeoutFn'
 export { useLongPress } from './useLongPress'

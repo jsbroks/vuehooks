@@ -1,6 +1,6 @@
 import { ref } from '@vue/composition-api'
 import { hasWindow } from './utils'
-import { useEventListener } from './useEventListener'
+import { useWindowEvent } from './useWindowEvent'
 
 export function hasWindowSize() {
   const width = ref(Infinity)
@@ -12,7 +12,7 @@ export function hasWindowSize() {
   }
 
   if (hasWindow()) set()
-  useEventListener('resize', set)
+  useWindowEvent('resize', set)
 
   return { width, height }
 }
