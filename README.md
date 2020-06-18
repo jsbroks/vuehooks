@@ -1,6 +1,6 @@
-<!-- <p align="center">
-    <img src="https://raw.githubusercontent.com/datatorch/documentation/master/docs/.vuepress/public/circle.png" width="350" />
-</p> -->
+<p align="center">
+    <img src="https://raw.githubusercontent.com/datatorch/documentation/master/docs/.vuepress/public/vuehooks.png" width="500" />
+</p>
 
 <h1 align="center">
   VueHooks
