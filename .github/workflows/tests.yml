@@ -2,24 +2,28 @@ name: Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - name: Install dependenices
-      run: yarn --frozen-lockfile
-    - name: Run tests
-      run: yarn test --coverage
-    - name: Submit coverage
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install dependenices
+        run: yarn --frozen-lockfile
+      - name: Build libraries
+        run: yarn build
+      - name: Bootstrap libraries
+        run: yarn bootstrap
+      - name: Run tests
+        run: yarn test --coverage
+      - name: Submit coverage
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
