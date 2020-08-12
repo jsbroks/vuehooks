@@ -35,10 +35,10 @@
 
 <!-- omit in toc -->
 
-- [@vuehooks/core](#vuehookscore) - Collection of common hooks.
-- [@vuehooks/query](#vuehooksquery) - Hooks for fetching, caching and updating
+- [@vuehooks/core](/packages/core) - Collection of essential hooks.
+- [@vuehooks/query](/packages/query) - Hooks for fetching, caching and updating
   asynchronous data.
-- [@vuehooks/router](#vuehooksrouter) - Hooks for make using VueRouter easier.
+- [@vuehooks/router](/packages/router) - Hooks for using VueRouter easier.
 
 <br />
 
