@@ -4,17 +4,18 @@ import { renderHook } from '../../../testing/src'
 import { QueryStatus } from '../query'
 
 describe('useQuery', () => {
-  const mockFetch = jest.fn().mockResolvedValue({ mock: true })
+  const mockFetchOutput = { mock: true }
+  const mockFetch = jest.fn().mockResolvedValue(mockFetchOutput)
 
-  const fetch = () => {
-    console.log('calling')
-    return Promise.resolve({
-      idk: [{ id: 1 }, { id: 2 }]
-    })
-  }
+  // const fetch = () => {
+  //   console.log('calling')
+  //   return Promise.resolve({
+  //     idk: [{ id: 1 }, { id: 2 }]
+  //   })
+  // }
 
   it('calls query function', async () => {
-    const wrapper = renderHook(() => {
+    renderHook(() => {
       const { data, status, isLoading, isSuccess, isError, query } = useQuery(
         'fetch',
         mockFetch
@@ -31,11 +32,6 @@ describe('useQuery', () => {
     })
 
     await Vue.nextTick()
-    await Vue.nextTick()
-    await Vue.nextTick()
-    await Vue.nextTick()
-    await Vue.nextTick()
-    console.log(wrapper.vm.status)
-    console.log(wrapper.vm.data)
+    // expect(wrapper.vm.data).toBe(mockFetchOutput)
   })
 })

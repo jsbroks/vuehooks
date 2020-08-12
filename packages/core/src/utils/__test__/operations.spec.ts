@@ -1,4 +1,4 @@
-import { noop } from '../operations'
+import { noop } from '../'
 
 describe('operations', () => {
   it('returns nothing', () => {

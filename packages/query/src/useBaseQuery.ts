@@ -1,4 +1,4 @@
-import { computed, onMounted, onUnmounted, ref } from '@vue/composition-api'
+import { computed, onUnmounted, ref } from '@vue/composition-api'
 import { QueryConfig, QueryStatus, SubscriptionHandler } from './query'
 import { QueryKey } from './queryKey'
 import { QueryResult } from './types'
@@ -11,6 +11,7 @@ export function useBaseQuery<TResult, TError = unknown>(
   const cache = getQueryCache()
 
   const query = cache.query<TResult, TError>(key, config)
+
   const data = ref<TResult>()
   const error = ref<TError>()
   const status = ref(query.state.status)
@@ -20,8 +21,8 @@ export function useBaseQuery<TResult, TError = unknown>(
     error.value = state.error
     status.value = status.value
   }
+  query.subscribe(handler)
 
-  onMounted(() => query.subscribe(handler))
   onUnmounted(() => query.unsubscribe(handler))
 
   query.fetch()

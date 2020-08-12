@@ -1,4 +1,4 @@
-import { emitter } from '../emitter'
+import { emitter } from '../'
 
 describe('emitter', () => {
   it('should export a function', () => {
