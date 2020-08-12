@@ -17,5 +17,8 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageReporters: ['html', 'lcov', 'text'],
   collectCoverageFrom: ['src/**/*.ts', 'packages/*/src/**/*.ts'],
-  watchPathIgnorePatterns: ['/node_modules/']
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '(/__tests__/.*|(\\.|/)(test|spec))\\.d.ts$'
+  ]
 }

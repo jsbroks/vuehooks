@@ -12,15 +12,19 @@ export function useBaseQuery<TResult, TError = unknown>(
 
   const query = cache.query<TResult, TError>(key, config)
   const data = ref<TResult>()
+  const error = ref<TError>()
   const status = ref(query.state.status)
 
   const handler: SubscriptionHandler<TResult, TError> = state => {
     data.value = state.data
+    error.value = state.error
     status.value = status.value
   }
 
   onMounted(() => query.subscribe(handler))
   onUnmounted(() => query.unsubscribe(handler))
+
+  query.fetch()
 
   const isLoading = computed(() => status.value === QueryStatus.Loading)
   const isError = computed(() => status.value === QueryStatus.Error)
@@ -28,6 +32,7 @@ export function useBaseQuery<TResult, TError = unknown>(
 
   return {
     data,
+    error,
     status,
     isError,
     isLoading,

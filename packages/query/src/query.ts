@@ -79,6 +79,7 @@ export class Query<TResult, TError> {
 
         if (!this.config.isDataEqual!(this.state.data, data))
           this.dispatch({ status: QueryStatus.Success, data })
+
         delete this.promise
 
         return data

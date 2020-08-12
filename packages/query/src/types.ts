@@ -7,7 +7,6 @@ import { Query, QueryStatus } from './query'
 
 export interface BaseQueryResult<TResult, TError = unknown> {
   status: Ref<QueryStatus>
-  error?: TError
 
   isLoading: ComputedRef<boolean>
   isSuccess: ComputedRef<boolean>
@@ -27,4 +26,5 @@ export interface BaseQueryResult<TResult, TError = unknown> {
 export interface QueryResult<TResult, TError = unknown>
   extends BaseQueryResult<TResult, TError> {
   data: Ref<TResult | undefined>
+  error: Ref<TError | undefined>
 }
