@@ -1,16 +1,23 @@
 <h1 align="center">
   VueHooks Query
 </h1>
-<h4 align="center">Collection of utility composition functions for Vue</h4>
-
-Hooks for fetching, caching and updating asynchronous data in Vue
+<h4 align="center">Hooks for fetching, caching and updating asynchronous data in Vue.</h4>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/@vuehooks/query" target="__blank">
 <img src="https://img.shields.io/npm/v/@vuehooks/query?color=1abc9c" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@vuehooks/query" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/query?color=34495e"/></a>
+</p>
 
-## `@vuehooks/query`
+<h2 align="center">
+  `@vuehooks/query`
+</h2>
+
+```js
+npm i @vuehooks/query
+// or
+yarn add @vuehooks/query
+```
 
 ## :rocket: Features
 
