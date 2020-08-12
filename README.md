@@ -11,10 +11,10 @@
 <a href="https://www.npmjs.com/package/@vuehooks/core" target="__blank">
 <img src="https://img.shields.io/npm/v/@vuehooks/core?color=1abc9c" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@vuehooks" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/core?color=34495e"/></a>
-<a href="https://github.com/datatorch/vuehooks" target="__blank"><img src="https://img.shields.io/github/last-commit/datatorch/vuehooks.svg?color=9b59b6" alt="GitHub last commit" /></a>
-<a href="https://github.com/datatorch/vuehooks/issues" target="__blank"><img src="https://img.shields.io/github/issues/datatorch/vuehooks.svg?color=3498db" alt="GitHub issues" /></a>
-<a href='https://coveralls.io/github/datatorch/vuehooks?branch=master'><img src='https://coveralls.io/repos/github/datatorch/vuehooks/badge.svg?branch=master' alt='Coverage Status' /></a>
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/datatorch/vuehooks/Tests?color=2ecc71">
+<a href="https://github.com/jsbroks/vuehooks" target="__blank"><img src="https://img.shields.io/github/last-commit/jsbroks/vuehooks.svg?color=9b59b6" alt="GitHub last commit" /></a>
+<a href="https://github.com/jsbroks/vuehooks/issues" target="__blank"><img src="https://img.shields.io/github/issues/jsbroks/vuehooks.svg?color=3498db" alt="GitHub issues" /></a>
+<a href='https://coveralls.io/github/jsbroks/vuehooks?branch=master'><img src='https://coveralls.io/repos/github/jsbroks/vuehooks/badge.svg?branch=master' alt='Coverage Status' /></a>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jsbroks/vuehooks/Tests?color=2ecc71">
 </p>
 
 <br />
@@ -40,5 +40,15 @@
   asynchronous data.
 - [@vuehooks/router](/packages/router) - Hooks for using VueRouter easier.
 
-<br />
+## Alternatives
 
+|   Features    | VueHooks |  VueUse   | vue-composable | vue-use-web |
+| :-----------: | :------: | :-------: | :------------: | :---------: |
+|   Functions   |    33    |    53     |       51       |     24      |
+|   Packages    |    3     |     3     |       2        |      1      |
+|     Stars     |    2     |   1.3k    |      260       |     450     |
+| Test Coverage |   42%    | _unknown_ |      96%       |  _unknown_  |
+
+_last updated 12/08/2020_
+
+<br />

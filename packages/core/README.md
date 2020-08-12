@@ -32,10 +32,17 @@
   - `useTimeout` — change variables state after a timeout.
   - `useTimeoutFn` — call a function after a timeout.
 - **Browser**
+  - `useLocalStorage` — manages a value in localStorage.
+  - `useSessionStorage` — manages a value in sessionStorage.
+  - `useClipboard` — copies text to clipboard.
+  - `useFullscreen` — display an element fullscreen.
   - `useEventListener` — add event listeners to dom with ease.
   - `useEventListenerElement` — add event listeners to element with ease.
   - `useMediaQuery` — track the results of a media query programmatically.
 - **Sensors**
+  - `useBattery` — tracks device batter state.
+  - `useGeolocation` — tracks geo location state of user's device.
+  - `useHover` — track if an element is being hovered over.
   - `useLongPress` — track long press gestures.
   - `usePrint` — track if user is printing.
   - `useMouse` — track mouse position.
@@ -47,8 +54,8 @@
   - `createGlobalState` — create state accessible in any component.
   - `useClamp` — track state of a clamped number.
   - `useCounter` — track state of a number.
-  - `useHover` — track if an element is being hovered over.
   - `useToggle` — track state of a boolean.
+  - `useMounted` — track if the component is mounted.
 - **Emitter**
   - `createEmitter` — create an emitter for an event bus.
   - `useEventOn` — add event listeners to emitters.
