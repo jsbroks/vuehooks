@@ -9,15 +9,16 @@
 <a href="https://www.npmjs.com/package/@vuehooks/query" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/query?color=34495e"/></a>
 </p>
 
-<h2 align="center">
-  `@vuehooks/query`
+<br>
+
+<h4 align="center">
+  <pre>npm i <a href="https://www.npmjs.com/package/@vuehooks/query">@vuehooks/query</a>
+  <i>or</i>
+  yarn add <a href="https://www.npmjs.com/package/@vuehooks/query">@vuehooks/query</a></pre>
 </h2>
 
-```js
-npm i @vuehooks/query
-// or
-yarn add @vuehooks/query
-```
+<br>
+
 
 ## :rocket: Features
 
