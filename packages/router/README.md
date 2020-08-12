@@ -6,7 +6,7 @@
 <p align="center">
 <a href="https://www.npmjs.com/package/@vuehooks/router" target="__blank">
 <img src="https://img.shields.io/npm/v/@vuehooks/router?color=1abc9c" alt="NPM version" /></a>
-<a href="https://www.npmjs.com/package/@vuehooks/router" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/query?color=34495e"/></a>
+<a href="https://www.npmjs.com/package/@vuehooks/router" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@vuehooks/router?color=34495e"/></a>
 </p>
 
 <br>
