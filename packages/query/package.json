@@ -1,0 +1,35 @@
+{
+  "name": "@vuehooks/query",
+  "version": "0.0.5",
+  "description": "Hooks for fetching, caching and updating asynchronous data in Vue",
+  "keywords": [
+    "vue3"
+  ],
+  "author": "Justin Brooks <justin@datatorch.io>",
+  "homepage": "https://github.com/jsbroks/vuehooks#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsbroks/vuehooks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/jsbroks/vuehooks/issues"
+  },
+  "dependencies": {
+    "@vuehooks/core": "^0.0.5"
+  }
+}

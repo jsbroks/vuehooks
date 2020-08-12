@@ -8,11 +8,11 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch --coverage",
-    "build": "lerna run build --npm-client=yarn",
+    "build": "yarn clean && lerna run build --npm-client=yarn",
     "bootstrap": "lerna bootstrap --npm-client=yarn",
-    "clean": "rimraf packages/**/dist packages/**/*.tsbuildinfo",
+    "clean": "rimraf packages/**/dist packages/**/*.tsbuildinfo packages/**/node_modules",
     "update": "yarn upgrade-interactive --latest",
-    "release": "yarn clean && yarn build && lerna publish"
+    "release": "yarn build && lerna publish"
   },
   "dependencies": {},
   "peerDependencies": {

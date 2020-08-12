@@ -7,3 +7,5 @@ export { useTimeout } from './useTimeout'
 export { useTimeoutFn } from './useTimeoutFn'
 export { useLongPress } from './useLongPress'
 export { useBus } from './useBus'
+
+export { Emitter } from './utils/emitter'

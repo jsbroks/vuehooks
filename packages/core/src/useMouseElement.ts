@@ -1,5 +1,5 @@
 import { Ref, ref } from '@vue/composition-api'
-import { useEventListenerElement } from './useEventListenerElement'
+import { useEvent } from './useEvent'
 import { getXY } from './useMouse'
 
 export function useMouseInElement(target: Ref<HTMLElement | null>) {
@@ -29,8 +29,8 @@ export function useMouseInElement(target: Ref<HTMLElement | null>) {
     elementWidth.value = width
   }
 
-  useEventListenerElement(target, 'mousemove', move)
-  useEventListenerElement(target, 'touchmove', move)
+  useEvent(target, 'mousemove', move)
+  useEvent(target, 'touchmove', move)
 
   return {
     x,

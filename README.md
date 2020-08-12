@@ -27,7 +27,7 @@
 - **Zero-config** server-side rendering capability.
 - **Self-contained** with no dependencies.
 - **Backed by a team** using VueHooks in production.
-- **Additional addons** such as vue-router, timeago, etc.
+- **Additional addons** such as vue-router, timeago, query, etc.
 
 <br />
 
@@ -35,8 +35,10 @@
 
 <!-- omit in toc -->
 
-- [@vuehooks/core](#vuehookscore)
-- [@vuehooks/router](#vuehooksrouter)
+- [@vuehooks/core](#vuehookscore) - Collection of common hooks.
+- [@vuehooks/query](#vuehooksquery) - Hooks for fetching, caching and updating
+  asynchronous data.
+- [@vuehooks/router](#vuehooksrouter) - Hooks for make using VueRouter easier.
 
 <br />
 
