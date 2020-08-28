@@ -2,7 +2,7 @@ import { Ref, ref } from '@vue/composition-api'
 import { useEvent } from './useEvent'
 import { getXY } from './useMouse'
 
-export function useMouseInElement(target: Ref<HTMLElement | null>) {
+export function useMouseElement(target: Ref<HTMLElement | null>) {
   const x = ref(0)
   const y = ref(0)
 

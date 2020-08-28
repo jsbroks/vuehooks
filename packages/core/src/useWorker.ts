@@ -1,6 +1,6 @@
 import { onMounted, onUnmounted, ref, Ref } from '@vue/composition-api'
 
-export function useWebWorker(url: string) {
+export function useWorker(url: string) {
   const data: Ref<any> = ref(null)
   const error: Ref<any> = ref(null)
   let worker: Worker

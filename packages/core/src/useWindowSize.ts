@@ -2,7 +2,7 @@ import { ref } from '@vue/composition-api'
 import { hasWindow } from './utils'
 import { useWindowEvent } from './useWindowEvent'
 
-export function hasWindowSize() {
+export function useWindowSize() {
   const width = ref(Infinity)
   const height = ref(Infinity)
 
