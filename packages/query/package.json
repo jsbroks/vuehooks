@@ -1,6 +1,6 @@
 {
   "name": "@vuehooks/query",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Hooks for fetching, caching and updating asynchronous data in Vue",
   "keywords": [
     "vue3"
@@ -30,7 +30,7 @@
     "url": "https://github.com/jsbroks/vuehooks/issues"
   },
   "dependencies": {
-    "@vuehooks/core": "^0.0.6"
+    "@vuehooks/core": "^0.0.7"
   },
   "gitHead": "b2a58eed205fec2c1d594c4f837d0d3eb366819d"
 }

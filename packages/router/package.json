@@ -1,6 +1,6 @@
 {
   "name": "@vuehooks/router",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Useful composition functions for vue-router",
   "keywords": [
     "vue",

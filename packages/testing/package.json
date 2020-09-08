@@ -1,6 +1,6 @@
 {
   "name": "@vuehooks/testing",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple Vue hook testing utilities",
   "keywords": [
     "vue",
