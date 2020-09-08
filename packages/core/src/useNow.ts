@@ -24,7 +24,7 @@ export function useNow() {
   if (hasWindow()) start()
   else onMounted(start)
 
-  onUnmounted(() => stop())
+  onUnmounted(stop)
 
   return now
 }
